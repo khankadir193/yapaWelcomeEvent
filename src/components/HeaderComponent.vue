@@ -56,15 +56,18 @@
 
         <!-- howtoplay -->
         <howtoplay :language="selectLanguageIndex" v-if="ruleShow" @closeMe="ruleShow = false"></howtoplay>
+        <!-- <leaderBoardComp /> -->
     </div>
 </template>
 <script>
 import { ref } from "vue";
 import howtoplay from "./howToPlay.vue";
+// import leaderBoardComp from "./leaderBoardComp.vue";
 
 export default {
     components: {
-        howtoplay
+        howtoplay,
+        // leaderBoardComp
     },
     setup() {
         let canClick = ref(true);
@@ -172,7 +175,7 @@ export default {
 
     .header {
         width: 100%;
-        height: 450px;
+        height: 300px;
         background: url("../assets/images/header.jpg") no-repeat;
         background-size: 100%;
         position: relative;
@@ -347,7 +350,7 @@ export default {
         justify-content: center;
         overflow: hidden;
         right: 0;
-        top: 335px;
+        top: 269px;
 
         span {
             color: #fff;
@@ -365,7 +368,7 @@ export default {
     .curt_timer {
         width: 100%;
         position: absolute;
-        bottom: 8rem;
+        bottom: -1rem;
 
         ul {
             display: flex;
