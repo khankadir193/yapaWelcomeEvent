@@ -8,15 +8,17 @@
         <div v-for="item in beansData" :key="item.id" class="leaderBoard-strip">
             <div class="beans-icon">
                 <img src="../assets/images/beans-icon.png" alt="beans">
-                <span>1000</span>
+                <span>{{ item.id }}</span>
             </div>
 
             <div class="img-container">
                 <div class="left-icon">
-                    <img src="../assets/images/group-beans.png" alt="groupbeans">
+                    <!-- <img src="../assets/images/group-beans.png" alt="groupbeans"> -->
+                    <img :src="item.awardsInstance[0].award.image" alt="">
                 </div>
                 <div class="right-icon">
-                    <img src="../assets/images/wallet.png" alt="groupbeans">
+                    <!-- <img src="../assets/images/wallet.png" alt="groupbeans"> -->
+                    <img :src="item.awardsInstance[1].award.image" alt="">
                 </div>
             </div>
         </div>
@@ -52,8 +54,8 @@ export default {
         axios.get(URL).
             then((response) => {
                 console.log('response.data...???', response.data);
-                this.beansData = response;
-                console.log('this.beansData...', this.beansData.data);
+                this.beansData = response.data.data;
+                console.log('this.beansData...', this.beansData);
             })
             .catch(err => {
                 console.log('fetching data is getting error:', err);
