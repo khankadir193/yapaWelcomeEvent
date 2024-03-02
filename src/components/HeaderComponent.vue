@@ -188,7 +188,7 @@ export default {
             background-color: rgba(89, 7, 173, 0.5);
             transform: translateX(-50%);
             border-radius: 9999px;
-            top: 20.4%;
+            top: 27.4%;
             text-align: center;
             background-size: 100% 100%;
 
