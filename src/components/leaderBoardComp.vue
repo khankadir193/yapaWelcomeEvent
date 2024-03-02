@@ -73,13 +73,10 @@ export default {
 }
 
 .leaderBoard-strip {
-    background: url(../assets/images/strip.png);
+    background: url(../assets/images/strip.png) center/ 100% 100% no-repeat;
     height: 13vh;
     width: 100%;
     // opacity: 100;
-    background-size: cover;
-    background-size: 100% 100%;
-
     // background-color: rgba(0, 10, 0, 100);
 }
 
@@ -108,9 +105,7 @@ export default {
     .left-icon {
         width: 20%;
         height: 12vh;
-        background: url(../assets/images/icon-rectangle.png);
-        background-size: cover;
-        background-size: 100% 100%;
+        background: url(../assets/images/icon-rectangle.png) center/ 100% 100% no-repeat;
 
         img {
             width: 100%;
@@ -120,9 +115,7 @@ export default {
     .right-icon {
         width: 20%;
         height: 12vh;
-        background: url(../assets/images/icon-rectangle.png);
-        background-size: cover;
-        background-size: 100% 100%;
+        background: url(../assets/images/icon-rectangle.png) center/ 100% 100% no-repeat;
         img {
             width: 90%;
             margin: 0 auto;
