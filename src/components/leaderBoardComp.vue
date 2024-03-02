@@ -24,6 +24,18 @@
             This&nbsp;offer&nbsp;is&nbsp;valid&nbsp;for&nbsp;all&nbsp;payment&nbsp;methods.&nbsp;This&nbsp;offer&nbsp;is&nbsp;valid&nbsp;till&nbsp;30th&nbsp;August.&nbsp;All&nbsp;rewards&nbsp;will&nbsp;be&nbsp;sent&nbsp;automatically&nbsp;to&nbsp;user's&nbsp;baggage.<br />All&nbsp;rights&nbsp;belong&nbsp;to&nbsp;Yapa.
         </h2>
     </div>
+
+    <div class="top-up">
+        <img src="../assets/images/button_top_up.png" alt="top-up">
+    </div>
+
+    <div class="footer">
+        <span class="text_2">
+            Roman&nbsp;&amp;&nbsp;English:+1(442)228-3245 <span class="dot">.</span> Thank you!
+        </span>
+        <span class="line">------------------------------------</span>
+        <span class="rights">All rights reserved by YAPA</span>
+    </div>
 </template>
 
 <script>
@@ -159,6 +171,50 @@ export default {
     text-align: center;
 }
 
+.top-up {
+    width: 90%;
+    height: 12vh;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.text_2 {
+    width: 350px;
+    height: 22px;
+    overflow-wrap: break-word;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    font-weight: normal;
+    text-align: center;
+    white-space: wrap;
+    margin: 0 auto;
+}
+
+
+.dot {
+    width: auto;
+    height: auto;
+}
+
+.line{
+    margin: 0 auto;
+    color: white;
+}
+
+.rights{
+    font-size: 14px;
+    color: white;
+    margin: 0 auto;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
