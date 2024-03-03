@@ -1,6 +1,7 @@
 <template>
     <div class="welcome-title">
-        <img src="../assets/images/picture_title.png" alt="welcom">
+        <img src="../assets/images/picture_title.png" alt="welcome">
+        <h2>Welcome Offer</h2>
     </div>
     <div class="leaderBoard">
         <span
@@ -73,7 +74,7 @@ export default {
     margin: 0 auto;
     border-radius: 2vw;
     position: relative;
-    top: -20vw;
+    top: -21vw;
     // bottom: -10rem;
 }
 
@@ -104,6 +105,14 @@ export default {
 
     img {
         width: 100%;
+    }
+    h2{
+        position: absolute;
+        top: -4vw;
+        left: 11vw;
+        color: white;
+        font-size: 7vw;
+        // margin: 0 auto;
     }
 }
 
