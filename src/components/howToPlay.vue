@@ -156,7 +156,7 @@
                     <div class="text">Ipapadala ang mga reward sa event sa loob ng 72 oras pagkatapos ng event. </div>
                 </div>
                 <div class="closeBtn" @click="closeMask">
-                    <img src="../assets/images/Close btn.png" alt="" />
+                    <img src="../assets/images/close.png" alt="" />
                 </div>
             </div>
         </div>
@@ -224,12 +224,12 @@ export default {
             padding-right: 0;
             width: 300px;
             height: 400px;
-            background: linear-gradient(90deg, #8268E8, #977AF3, #8268E8);
+            background: white;
             border: 1.5px solid #FFE898;
             border-radius: 15px;
 
             .title {
-                width: 140px;
+                width: 181px;
                 height: 35px;
                 position: absolute;
                 text-align: center;
@@ -237,9 +237,9 @@ export default {
                 align-items: center;
                 justify-content: center;
                 left: 50%;
-                top: 0;
+                top: 7px;
                 transform: translateX(-50%) translateY(-55%);
-                background: url("../assets/images/button_no_select.png") no-repeat;
+                background: url("../assets/images/picture_title.png") no-repeat;
                 background-size: 100% 100%;
 
                 .tx {
@@ -293,7 +293,7 @@ export default {
                     font-size: 13px;
                     margin-top: 10px;
                     font-family: "Roboto-Regular";
-                    color: #fff;
+                    color: red;
                     background-color: rgba(0, 0, 0, 0.1);
 
                     padding: 10px;
@@ -315,7 +315,7 @@ export default {
                 font-weight: 500;
                 margin-top: 10px;
                 margin-bottom: -5px;
-                color: #fff;
+                color: red;
                 font-family: "Roboto-Regular";
                 padding-left: 10px;
             }

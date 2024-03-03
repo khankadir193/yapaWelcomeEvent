@@ -15,11 +15,11 @@
             <div class="title_3">
                 <div class="date_t">
                     <div class="s_t">
-                        <span>10/10</span>
+                        <span>21/8</span>
                     </div>
                     <div class="line">-</div>
                     <div class="s_t">
-                        <span>17/10</span>
+                        <span>30/8</span>
                     </div>
                 </div>
             </div>
@@ -191,6 +191,7 @@ export default {
             top: 27.4%;
             text-align: center;
             background-size: 100% 100%;
+            color: #FFFDAE;
 
             .date_t {
                 position: relative;
@@ -245,10 +246,10 @@ export default {
             .rtbg {
                 position: absolute;
                 width: 21px;
-                height: 20px;
+                height: 26px;
                 right: 0px;
                 top: 0px;
-                background: rgba(193, 104, 255, 1);
+                background: #dddd0b;
                 border-top-right-radius: 2em;
                 border-bottom-right-radius: 2em;
             }
@@ -335,7 +336,7 @@ export default {
 
     .float_rules {
         position: absolute;
-        background: linear-gradient(0deg, #733dfd, #e477ff);
+        background: #dddd0b;
 
         border: 2px solid #c4a1ff;
         border-radius: 9999px 0 0 9999px;
