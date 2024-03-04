@@ -80,7 +80,7 @@ export default {
 
 .text_14 {
     position: relative;
-    width: 81vw;
+    width: 317px;
     height: 68px;
     overflow-wrap: break-word;
     color: #e50016;
@@ -120,6 +120,7 @@ export default {
     background: url(../assets/images/strip.png) center/ 100% 100% no-repeat;
     height: 13vh;
     width: 100%;
+    margin-top: 3vw;
     // opacity: 100;
     // background-color: rgba(0, 10, 0, 100);
 }
@@ -144,7 +145,7 @@ export default {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: -3.5rem;
+    top: -4rem;
 
     .left-icon {
         width: 20%;
@@ -169,16 +170,16 @@ export default {
 }
 
 .paragraph_1 {
-    width: 252px !important;
-    height: 80px !important;
+    width: 303px !important;
+    height: 40px !important;
     overflow-wrap: break-word;
     color: rgba(153, 65, 12, 1);
-    font-size: 4vw;
+    font-size: 10px;
     font-family: Roboto-Regular;
     font-weight: normal;
     text-align: center;
     //margin: 30px 0 30px 47px;
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
 }
 

@@ -55,18 +55,18 @@
         </div>
 
         <!-- howtoplay -->
-        <howtoplay :language="selectLanguageIndex" v-if="ruleShow" @closeMe="ruleShow = false"></howtoplay>
+        <modalComp :language="selectLanguageIndex" v-if="ruleShow" @closeMe="ruleShow = false"></modalComp>
         <!-- <leaderBoardComp /> -->
     </div>
 </template>
 <script>
 import { ref } from "vue";
-import howtoplay from "./howToPlay.vue";
+import modalComp from "./modalComp.vue";
 // import leaderBoardComp from "./leaderBoardComp.vue";
 
 export default {
     components: {
-        howtoplay,
+        modalComp,
         // leaderBoardComp
     },
     setup() {
@@ -188,7 +188,7 @@ export default {
             background-color: rgba(89, 7, 173, 0.5);
             transform: translateX(-50%);
             border-radius: 9999px;
-            top: 27.4%;
+            top: 31.4%;
             text-align: center;
             background-size: 100% 100%;
             color: #FFFDAE;
@@ -390,9 +390,10 @@ export default {
                 justify-content: center;
                 font-weight: 400;
                 box-sizing: border-box;
-                background: linear-gradient(180deg, #e861ff, #b950f0);
+                // background: linear-gradient(180deg, #e861ff, #b950f0);
                 border: 1px solid #fff1a2;
                 border-radius: 5px;
+                background-color: white;
 
                 .time {
                     vertical-align: middle;
@@ -400,7 +401,7 @@ export default {
                     text-align: center;
                     font-family: "Roboto-Regular";
                     font-weight: 500;
-                    color: #fff;
+                    color:#82242D ;
                 }
             }
 
@@ -671,4 +672,4 @@ export default {
     }
 }
 </style>
-  
+  ./modalComp.vue
