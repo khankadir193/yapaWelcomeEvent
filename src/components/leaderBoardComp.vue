@@ -4,8 +4,7 @@
         <h2>Welcome Offer</h2>
     </div>
     <div class="leaderBoard">
-        <span
-            class="text_14">Welcome&nbsp;to&nbsp;YAPA!&nbsp;Start&nbsp;your&nbsp;first&nbsp;topup&nbsp;with&nbsp;more&nbsp;suprising&nbsp;rewards!</span>
+        <span class="text_14">Welcome to YAPA! Start your first topup with more surprising rewards!</span>
         <div v-for="item in beansData" :key="item.id" class="leaderBoard-strip">
             <div class="beans-icon">
                 <img src="../assets/images/beans-icon.png" alt="beans">
@@ -24,7 +23,8 @@
             </div>
         </div>
         <h2 class="paragraph_1">
-            This&nbsp;offer&nbsp;is&nbsp;valid&nbsp;for&nbsp;all&nbsp;payment&nbsp;methods.&nbsp;This&nbsp;offer&nbsp;is&nbsp;valid&nbsp;till&nbsp;30th&nbsp;August.&nbsp;All&nbsp;rewards&nbsp;will&nbsp;be&nbsp;sent&nbsp;automatically&nbsp;to&nbsp;user's&nbsp;baggage.<br />All&nbsp;rights&nbsp;belong&nbsp;to&nbsp;Yapa.
+            This offer is valid for all payment methods. This offer is valid till 30th August. All rewards will be sent
+            automatically to user's baggage.<br />All rights belong to Yapa.
         </h2>
     </div>
 
@@ -138,6 +138,7 @@ export default {
 
     span {
         width: 10%;
+        color: #99410C !important;
     }
 }
 
@@ -229,7 +230,7 @@ export default {
     flex-direction: column;
 }
 
-.num{
+.num {
     color: yellow;
 }
 
