@@ -34,7 +34,7 @@
 
     <div class="footer">
         <span class="text_2">
-            Roman&nbsp;&amp;&nbsp;English:+1(442)228-3245 <span class="dot">.</span> Thank you!
+            Roman & English:<span class="num">+1(442)228-3245</span> Thank you!
         </span>
         <span class="line">------------------------------------</span>
         <span class="rights">All rights reserved by YAPA</span>
@@ -106,7 +106,8 @@ export default {
     img {
         width: 100%;
     }
-    h2{
+
+    h2 {
         position: absolute;
         top: -4vw;
         left: 11vw;
@@ -212,22 +213,25 @@ export default {
     height: auto;
 }
 
-.line{
+.line {
     margin: 0 auto;
     color: white;
 }
 
-.rights{
+.rights {
     font-size: 14px;
     color: white;
     margin: 0 auto;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
 }
 
+.num{
+    color: yellow;
+}
 
 
 // .leaderBoard-strip {
@@ -238,5 +242,4 @@ export default {
 //     width: 100%;
 //     height: 100%;
 //     background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.5 is 50% opacity) */
-// }
-</style>
+// }</style>
