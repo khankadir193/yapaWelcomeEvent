@@ -29,7 +29,7 @@
                 <span :class="selectLanguageIndex == 5 ? ' mgaText' : ''">
                     {{ btnTextList[selectLanguageIndex - 1] }}</span>
             </div>
-            <!-- curt_timer -->
+            <!-- current time -->
             <div class="curt_timer">
                 <ul>
                     <li>
@@ -54,24 +54,21 @@
             </div>
         </div>
 
-        <!-- howtoplay -->
+        <!-- modal components -->
         <modalComp :language="selectLanguageIndex" v-if="ruleShow" @closeMe="ruleShow = false"></modalComp>
-        <!-- <leaderBoardComp /> -->
     </div>
 </template>
 <script>
 import { ref } from "vue";
 import modalComp from "./modalComp.vue";
-// import leaderBoardComp from "./leaderBoardComp.vue";
 
 export default {
     components: {
         modalComp,
-        // leaderBoardComp
     },
     setup() {
         let canClick = ref(true);
-        let timer = ref({ days: "00", hours: "00", mins: "00", secs: "00" });
+        let timer = ref({ days: "10", hours: "12", mins: "21", secs: "09" });
         let userAmount = ref(0);
         let rewardPopShow = ref(false); //
         let showRewardList = ref(null); //
@@ -154,14 +151,12 @@ export default {
 
     .bgc {
         position: relative;
-        // padding-top: 18px;
         background: linear-gradient(180deg, #917af4, #6d50e8);
     }
 
     .bgImg {
         width: 375px;
         height: 315px;
-        // background: url("../assets/img/background_leaderboard.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         left: 50%;
@@ -246,10 +241,10 @@ export default {
             .rtbg {
                 position: absolute;
                 width: 21px;
-                height: 26px;
+                height: 20px;
                 right: 0px;
                 top: 0px;
-                background: #dddd0b;
+                background: #FFA626;
                 border-top-right-radius: 2em;
                 border-bottom-right-radius: 2em;
             }
@@ -326,7 +321,6 @@ export default {
     .rewardBtn {
         width: 38px;
         height: 38px;
-        // background: url("../assets/img/button_rewards.png") no-repeat;
         background-size: 100% 100%;
         right: 10px;
         top: 283px;
@@ -336,7 +330,7 @@ export default {
 
     .float_rules {
         position: absolute;
-        background: #dddd0b;
+        background: #EEDB59;
 
         border: 2px solid #c4a1ff;
         border-radius: 9999px 0 0 9999px;
@@ -351,7 +345,7 @@ export default {
         justify-content: center;
         overflow: hidden;
         right: 0;
-        top: 269px;
+        top: 300px;
 
         span {
             color: #fff;
@@ -424,221 +418,6 @@ export default {
         text-shadow: 0px 0px 2px #640be6;
         font-size: 13px;
         text-align: center;
-    }
-
-    .gamePlay {
-        border-radius: 15px;
-        width: 350px;
-        padding: 15px 24px 1px 20px;
-        box-sizing: border-box;
-        background: linear-gradient(180deg, #e4e4fb, #cadafb);
-        position: relative;
-        margin: 0 auto;
-        transform: translateY(-40px);
-
-        .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .leftIcon,
-            .rightIcon {
-                width: 28px;
-                height: 10px;
-                // background: url("../assets/img/picture_title.png") no-repeat;
-                background-size: 100% 100%;
-            }
-
-            .leftIcon {
-                transform: rotateY(180deg);
-            }
-
-            .text {
-                margin: 0 24px;
-                font-family: "BalooBhaina";
-                font-size: 16px;
-                color: rgba(98, 44, 241, 1);
-            }
-        }
-
-        .ruleContent {
-            margin-top: 20px;
-
-            .tag {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                margin-bottom: 10px;
-
-                .num {
-                    width: 17px;
-                    height: 17px;
-                    background-color: rgba(200, 191, 248, 0.5);
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: 9px;
-                    color: #432398;
-
-                    font-size: 14px;
-                }
-
-                .tText {
-                    font-size: 14px;
-
-                    color: #432398;
-                }
-            }
-
-            .rText {
-                color: rgba(67, 35, 152, 0.7);
-                font-size: 13px;
-                // opacity: 0.7;
-                margin-bottom: 15px;
-                line-height: 1.3;
-            }
-        }
-    }
-
-    .luckyCarnival {
-        width: 350px;
-        padding: 14px 12px 20px;
-        background: linear-gradient(180deg, #e4e4fb, #cadafb);
-        border-radius: 15px;
-        box-sizing: border-box;
-        margin: 0 auto;
-        margin-top: -15px;
-        margin-bottom: 20px;
-
-        .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .leftIcon,
-            .rightIcon {
-                width: 28px;
-                height: 10px;
-                // background: url("../assets/img/picture_title.png") no-repeat;
-                background-size: 100% 100%;
-            }
-
-            .leftIcon {
-                transform: rotateY(180deg);
-            }
-
-            .text {
-                margin: 0 24px;
-                font-family: "BalooBhaina";
-                font-size: 16px;
-                color: rgba(98, 44, 241, 1);
-            }
-        }
-
-        .giftContent {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-top: 20px;
-
-            .gItem {
-                width: 50px;
-                height: 50px;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                .giftImg {
-                    img {
-                        width: 47px;
-                        height: auto;
-                    }
-                }
-
-                .giftText {
-                    margin-top: 12px;
-                    color: rgba(67, 35, 152, 0.7);
-                    font-size: 13px;
-                }
-
-                .giftStatus {
-                    .canClaim {
-                        width: 39px;
-                        height: 15px;
-                        background: linear-gradient(0deg, #f60000, #ff6e2e);
-                        border: 1px solid #fff283;
-                        box-sizing: border-box;
-                        position: absolute;
-                        border-radius: 9999px;
-
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        color: #fffb86;
-                        font-size: 10px;
-                        left: 50%;
-                        top: 40%;
-                        transform: translateX(-52%) translateY(0%);
-                    }
-
-                    .success {
-                        width: 20px;
-                        height: 20px;
-                        // background: url("../assets/img/reward/button_finished.png") no-repeat;
-                        background-size: 100% 100%;
-                        position: absolute;
-                        left: 50%;
-                        top: 33%;
-                        transform: translateX(-50%) translateY(0%);
-                    }
-                }
-            }
-        }
-    }
-
-    .switchBtn {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-        margin-bottom: 15px;
-        width: 100%;
-        z-index: 5;
-        padding: 0px 27px;
-        position: relative;
-
-        div,
-        span {
-            white-space: nowrap !important;
-        }
-
-        .btn {
-            width: 150px;
-            height: 35px;
-            box-sizing: border-box;
-            background: url("../assets/images/button_no_select.png") no-repeat;
-            background-size: 100% 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.6);
-            font-weight: 400;
-            padding-top: 4px;
-            font-family: "BalooBhaina";
-        }
-
-        .activeBtn {
-            // background: url("../assets/img/button_select.png") no-repeat;
-            background-size: 100% 100%;
-            font-family: "BalooBhaina";
-            color: #af6608;
-        }
     }
 
     .footer {
