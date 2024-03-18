@@ -409,9 +409,9 @@ export default {
     font-family: Roboto-Regular;
     font-weight: normal;
     text-align: center;
-    margin: 10px auto;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 4.5rem;
 }
 
 .top-up {
